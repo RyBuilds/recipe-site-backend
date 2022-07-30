@@ -5,8 +5,8 @@ import crypto from "crypto";
 import { exchangeCode } from "./todoist";
 
 const port = process.env.PORT || 3000;
-const TODOIST_CLIENT_ID = process.env.TODOIST_CLIENT_ID;
-const TODOIST_SECRET = process.env.TODOIST_SECRET;
+const TODOIST_CLIENT_ID = process.env.TODOIST_CLIENT_ID ?? "";
+const TODOIST_SECRET = process.env.TODOIST_SECRET ?? "";
 
 const app = express();
 app.use(cors());
